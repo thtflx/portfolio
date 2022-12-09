@@ -1,0 +1,233 @@
+/*CUSTOM-PROPS */
+
+:root {
+    --bg-color: ;
+    --text-color: ;
+    --font-patrick: 'Patrick Hand', cursive;
+    --font-martian: 'Martian Mono', monospace;
+    --font-chivo: 'Chivo Mono', monospace;
+    --font-inconsolata: 'Inconsolata', monospace;
+    --font-josefin: 'Josefin Sans', sans-serif;
+    --font-space: 'Space Grotesk', sans-serif;
+}
+
+
+/* FONTS */
+
+
+/* @font-face {
+    font-family: 'Pompiere';
+    src: url('../fonts/Pompiere-Regular.woff2') format('woff2'), url('../fonts/Pompiere-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Turret Road';
+    src: url('../fonts/TurretRoad-Bold.woff2') format('woff2'), url('../fonts/TurretRoad-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Digitalism';
+    src: url('../fonts/Digitalism.woff2') format('woff2'), url('../fonts/Digitalism.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Turret Road';
+    src: url('../fonts/TurretRoad-Light.woff2') format('woff2'), url('../fonts/TurretRoad-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Xtrusion (BRK)';
+    src: url('../fonts/XtrusionBRK.woff2') format('woff2'), url('../fonts/XtrusionBRK.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Turret Road';
+    src: url('../fonts/TurretRoad-Medium.woff2') format('woff2'), url('../fonts/TurretRoad-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Turret Road';
+    src: url('../fonts/TurretRoad-ExtraBold.woff2') format('woff2'), url('../fonts/TurretRoad-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Turret Road';
+    src: url('../fonts/TurretRoad-Regular.woff2') format('woff2'), url('../fonts/TurretRoad-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Turret Road';
+    src: url('../fonts/TurretRoad-ExtraLight.woff2') format('woff2'), url('../fonts/TurretRoad-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urban Jungle';
+    src: url('../fonts/urbanJungle/UrbanJungleDEMO.woff2') format('woff2'), url('../fonts/urbanJungle/UrbanJungleDEMO.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} */
+
+
+/* GLOBAL */
+
+*:focus {
+    outline: 3px dotted var();
+    outline-offset: 3px;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    /* font-family: var(--font-chivo); */
+    font-family: var(--font-inconsolata);
+    /* font-family: var(--font-josefin);
+    font-family: var(--font-martian);
+    font-family: var(--font-patrick);
+    font-family: var(--font-space); */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* AUTOFILL-STYLES */
+
+
+/*input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-color: transparent;
+  -webkit-text-fill-color: inherit;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}*/
+
+
+/* PLACEHOLDER-STYLES */
+
+
+/*::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder {
+  color: rgba(52, 49, 61, 0.5);
+  opacity: 1;
+}*/
+
+
+/* VISUALLY-HIDDEN */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+/* CONTAINER */
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* MAIN-CONTENT */
+
+.main-content {
+    flex-grow: 1;
+}
+
+
+/* BUTTON */
+
+.button {
+    display: inline-block;
+    padding: 8px 22px;
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 500;
+    border: 2px solid transparent;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 5px;
+}
+
+.button:active {
+    opacity: 0.6;
+}
+
+
+/* RETINA */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and ( min--moz-device-pixel-ratio: 2),
+only screen and ( -o-min-device-pixel-ratio: 2/1),
+only screen and ( min-device-pixel-ratio: 2),
+only screen and ( min-resolution: 192dpi),
+only screen and ( min-resolution: 2dppx) {}
