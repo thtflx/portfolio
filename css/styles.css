@@ -264,13 +264,13 @@ select:-webkit-autofill:focus {
 .portfolio__main {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .portfolio__list {
     padding: 0;
     margin: 0;
     list-style: none;
+    margin-right: 55px;
 }
 
 .portfolio__item {
@@ -323,6 +323,12 @@ only screen and ( min-resolution: 2dppx) {}
 @media (max-width: 375px) {
     .portfolio__main {
         align-items: center;
-        justify-content: center;
+        text-align: center;
+    }
+    .portfolio__list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        /* margin-right: 55px; */
     }
 }
