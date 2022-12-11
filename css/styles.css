@@ -3,12 +3,12 @@
 :root {
     --bg-color: #16133B;
     --text-color: #FEFFF9;
-    --font-patrick: 'Patrick Hand', cursive;
+    --font-inconsolata: 'Inconsolata', monospace;
+    /* --font-patrick: 'Patrick Hand', cursive;
     --font-martian: 'Martian Mono', monospace;
     --font-chivo: 'Chivo Mono', monospace;
-    --font-inconsolata: 'Inconsolata', monospace;
     --font-josefin: 'Josefin Sans', sans-serif;
-    --font-space: 'Space Grotesk', sans-serif;
+    --font-space: 'Space Grotesk', sans-serif; */
 }
 
 
@@ -125,8 +125,8 @@ body {
     line-height: 1.5;
     color: var(--text-color);
     background-color: var(--bg-color);
-    /* font-family: var(--font-chivo); */
     font-family: var(--font-inconsolata);
+    /* font-family: var(--font-chivo); */
     /* font-family: var(--font-josefin);
     font-family: var(--font-martian);
     font-family: var(--font-patrick);
@@ -208,8 +208,6 @@ select:-webkit-autofill:focus {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
-.portfolio {}
 
 .portfolio__header {
     justify-content: center;
@@ -297,33 +295,40 @@ select:-webkit-autofill:focus {
     font-weight: bold;
 }
 
+.minimalism {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    color: grey;
+    font-size: 15px;
+}
+
 
 /* RETINA */
 
-
-/* @media only screen and (-webkit-min-device-pixel-ratio: 2),
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and ( min--moz-device-pixel-ratio: 2),
 only screen and ( -o-min-device-pixel-ratio: 2/1),
 only screen and ( min-device-pixel-ratio: 2),
 only screen and ( min-resolution: 192dpi),
-only screen and ( min-resolution: 2dppx) {} */
-
-@media only screen and (max-width: 400px) {
-    .portfolio__main {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .portfolio__list {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
-    .portfolio__img {
-        margin-top: 0;
-        margin-bottom: 25px;
-        width: 400px;
-        border-radius: 12px;
-        border: 1px solid var(--text-color);
+only screen and ( min-resolution: 2dppx) {
+    @media only screen and (max-width: 400px) {
+        .portfolio__main {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .portfolio__list {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .portfolio__img {
+            margin-top: 0;
+            margin-bottom: 25px;
+            width: 400px;
+            border-radius: 12px;
+            border: 1px solid var(--text-color);
+        }
     }
 }
