@@ -304,6 +304,142 @@ select:-webkit-autofill:focus {
 }
 
 
+/* app.html */
+
+.apps__wrapper {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.apps__header {
+    display: flex;
+    align-items: center;
+}
+
+.apps__header-profile {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.apps__header-profile-img {
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+
+.app__header-profile-link {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.apps__header__drop {
+    margin-right: 20px;
+    color: gray;
+}
+
+.apps__header-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.apps__header-title {
+    font-size: 25px;
+    font-weight: 200;
+    color: var(--text-color);
+    margin-right: 5px;
+}
+
+.apps__header-icon {
+    position: relative;
+    bottom: -2px;
+    width: 20px;
+    height: 20px;
+}
+
+
+/* HERO */
+
+.apps__hero {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.apps__hero-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 43px;
+}
+
+.apps__hero-text {
+    margin-top: 0;
+    margin-bottom: 60px;
+    font-size: 26px;
+    font-weight: 400;
+    color: rgb(193, 181, 181);
+}
+
+.apps__hero-list {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.apps__hero-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.apps__hero-item {
+    margin-bottom: 50px;
+}
+
+.apps__hero-wrapper {
+    width: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: #221d57;
+}
+
+.apps__hero-wrapper:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+}
+
+.apps__hero-img {
+    border-radius: 10px 5px 0 0;
+    width: 350px;
+    height: 200px;
+}
+
+.apps__hero-content {
+    padding: 2px 16px;
+}
+
+.apps__hero-content-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.apps__hero-content-text {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 300;
+    color: #c0c1be;
+}
+
+.gray {
+    color: grey;
+}
+
+
 /* RETINA */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
