@@ -421,14 +421,18 @@ select:-webkit-autofill:focus {
 
 .apps__hero-wrapper {
     width: 350px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 400px;
+    box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.529);
     transition: 0.3s;
     border-radius: 5px;
-    background-color: #141133;
+    background-color: #08052578;
+    border-radius: 10px;
+    border: 1px solid rgba(20, 19, 19, 0.436);
 }
 
 .apps__hero-wrapper:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+    transform: translateY(-5px);
+    transition: ease 0.4s;
 }
 
 .apps__hero-img {
@@ -445,11 +449,14 @@ select:-webkit-autofill:focus {
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 30px;
+    /* text-decoration: none; */
+    font-weight: 800;
+    color: white;
 }
 
 .apps__hero-content-text {
     margin-top: 0;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300;
     color: #c0c1be;
 }
