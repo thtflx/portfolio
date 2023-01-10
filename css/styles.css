@@ -456,6 +456,7 @@ select:-webkit-autofill:focus {
 
 .apps__hero-content-text {
     margin-top: 0;
+    margin-bottom: 5px;
     font-size: 15px;
     font-weight: 300;
     color: #c0c1be;
@@ -477,6 +478,20 @@ select:-webkit-autofill:focus {
 
 .add:not(:last-child) {
     margin-right: 5px;
+}
+
+.link {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.link:hover {
+    opacity: 0.8;
+}
+
+.link-img {
+    width: 30px;
+    height: 30px;
 }
 
 
