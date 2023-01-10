@@ -465,6 +465,20 @@ select:-webkit-autofill:focus {
     color: grey;
 }
 
+.add {
+    display: flexbox;
+    justify-content: center;
+    padding: 1px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+}
+
+.add:not(:last-child) {
+    margin-right: 5px;
+}
+
 
 /* RETINA */
 
