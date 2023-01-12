@@ -263,12 +263,13 @@ select:-webkit-autofill:focus {
     margin-bottom: 4px;
     /* text-decoration: none; */
     font-weight: bold;
-    color: var(--text-color);
+    color: rgb(194, 47, 199);
+    /* color: var(--text-color); */
 }
 
 .portfolio__item-title:hover {
     text-decoration: underline;
-    color: rgb(194, 47, 199);
+    color: rgb(164, 147, 165);
 }
 
 .portfolio__item-descr {
